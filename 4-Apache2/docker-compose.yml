@@ -1,0 +1,9 @@
+version: '3.0'
+
+services:
+   web:
+      image: 'my-apache2'
+      ports:
+        - '8000:80'
+      volumes:
+        - "./public-html:/usr/local/apache2/htdocs"

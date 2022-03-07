@@ -1,0 +1,4 @@
+FROM mysql:5.6
+#Copiar el esquema de la base de datos en el directorio /docker-entrypoint-initdb.d
+
+COPY schema.sql /docker-entrypoint-initdb.d
